@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cape Fear Carving | Contemporary Fine Wood Sculptures</title>
+    <meta name="description" content="Explore museum-grade contemporary wood sculptures by Cape Fear Carving. Handcrafted in Wilmington, North Carolina, celebrating organic luxury, craftsmanship, and timeless art.">
+    
+    <!-- Open Graph / SEO -->
+    <meta property="og:title" content="Cape Fear Carving | Contemporary Fine Wood Sculptures">
+    <meta property="og:description" content="Museum-grade contemporary wood sculptures handcrafted in Wilmington, North Carolina.">
+    <meta property="og:type" content="website">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Icons (Lucide via CDN) -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Ambient FX Elements -->
+    <div id="custom-cursor"></div>
+    <div id="custom-cursor-follower"></div>
+    <div id="ambient-spotlight"></div>
+    <canvas id="dust-canvas"></canvas>
+
+    <!-- Floating Navigation -->
+    <header class="header">
+        <div class="logo">
+            <span class="logo-text">CAPE FEAR CARVING</span>
+            <span class="logo-subtext">Wilmington, NC</span>
+        </div>
+        <nav class="nav-links">
+            <a href="#collections" class="nav-link">Collections</a>
+            <a href="#gallery" class="nav-link">Gallery</a>
+            <a href="#craftsmanship" class="nav-link">Craftsmanship</a>
+            <a href="#process" class="nav-link">Our Process</a>
+            <a href="#testimonials" class="nav-link">Reviews</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+        <div class="nav-cta">
+            <a href="#commission" class="btn btn-nav">Commission</a>
+            <button class="menu-toggle" aria-label="Toggle Menu">
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation Overlay -->
+    <div class="mobile-nav">
+        <nav class="mobile-nav-links">
+            <a href="#collections" class="mobile-link">Collections</a>
+            <a href="#gallery" class="mobile-link">Gallery</a>
+            <a href="#craftsmanship" class="mobile-link">Craftsmanship</a>
+            <a href="#process" class="mobile-link">Our Process</a>
+            <a href="#testimonials" class="mobile-link">Reviews</a>
+            <a href="#contact" class="mobile-link">Contact</a>
+            <a href="#commission" class="btn btn-commission-mobile">Commission a Piece</a>
+        </nav>
+    </div>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero">
+            <div class="hero-bg-overlay"></div>
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <span class="eyebrow fade-in-up">FINE CONTEMPORARY SCULPTURE</span>
+                    <h1 class="hero-title fade-in-up">Wood Transformed <br>Into <span class="italic">Timeless Art.</span></h1>
+                    <p class="hero-desc fade-in-up">Every sculpture is handcrafted from carefully selected hardwoods, celebrating the natural beauty, grain structure, and movement of wood.</p>
+                    <div class="hero-actions fade-in-up">
+                        <a href="#commission" class="btn btn-primary">Commission a Piece</a>
+                        <a href="#gallery" class="btn btn-secondary">
+                            <span>Explore Gallery</span>
+                            <i data-lucide="arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-sculpture-wrapper fade-in">
+                    <div class="sculpture-glow"></div>
+                    <div class="sculpture-interactive">
+                        <img src="assets/hero_sculpture.png" alt="Handcrafted Walnut Sculpture" class="hero-sculpture-img">
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+                <span class="scroll-text">Scroll to Explore</span>
+            </div>
+        </section>
+
+        <!-- Collections Grid -->
+        <section id="collections" class="collections">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="eyebrow">THE ARCHIVE</span>
+                    <h2 class="section-title">Featured Collections</h2>
+                </div>
+                
+                <div class="collections-grid">
+                    <!-- Card 1 -->
+                    <div class="collection-card fade-in-up">
+                        <div class="card-bg-overlay"></div>
+                        <img src="assets/sculpture_organic.png" alt="Organic Sculptures" class="collection-img" loading="lazy">
+                        <div class="collection-info">
+                            <span class="collection-num">01</span>
+                            <h3>Organic Sculptures</h3>
+                            <p>Flowing contours and undulating ridges that mimic natural formations, wind, and water movement.</p>
+                            <a href="#gallery" class="collection-link">Explore Works <i data-lucide="arrow-up-right"></i></a>
+                        </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="collection-card fade-in-up">
+                        <div class="card-bg-overlay"></div>
+                        <img src="assets/sculpture_abstract.png" alt="Abstract Forms" class="collection-img" loading="lazy">
+                        <div class="collection-info">
+                            <span class="collection-num">02</span>
+                            <h3>Abstract Forms</h3>
+                            <p>Bold geometric intersections and hollowed-out spaces showcasing structural balance and shadow contrast.</p>
+                            <a href="#gallery" class="collection-link">Explore Works <i data-lucide="arrow-up-right"></i></a>
+                        </div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="collection-card fade-in-up">
+                        <div class="card-bg-overlay"></div>
+                        <img src="assets/sculpture_nautical.png" alt="Nautical Inspired Pieces" class="collection-img" loading="lazy">
+                        <div class="collection-info">
+                            <span class="collection-num">03</span>
+                            <h3>Nautical Sculptures</h3>
+                            <p>Graceful sails, sweeping waves, and maritime lines crafted from select coastal hardwoods.</p>
+                            <a href="#gallery" class="collection-link">Explore Works <i data-lucide="arrow-up-right"></i></a>
+                        </div>
+                    </div>
+                    <!-- Card 4 -->
+                    <div class="collection-card fade-in-up">
+                        <div class="card-bg-overlay"></div>
+                        <img src="assets/sculpture_commission.png" alt="Commissioned Artwork" class="collection-img" loading="lazy">
+                        <div class="collection-info">
+                            <span class="collection-num">04</span>
+                            <h3>Bespoke Works</h3>
+                            <p>One-of-a-kind site-specific installations and custom commissions tailored for luxury residences.</p>
+                            <a href="#commission" class="collection-link">Inquire Online <i data-lucide="arrow-up-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Craftsmanship Section -->
+        <section id="craftsmanship" class="craftsmanship">
+            <div class="craftsmanship-split">
+                <div class="craftsmanship-left">
+                    <div class="craftsmanship-content">
+                        <span class="eyebrow">THE CRAFT</span>
+                        <h2 class="section-title">Formed by Nature, <br>Refined by Hand.</h2>
+                        <p class="section-text">
+                            Based on the historic coast of Wilmington, North Carolina, Cape Fear Carving brings raw, salvaged American hardwoods to life. Each block of walnut, cherry, or oak is analyzed for weeks before a single tool touches the surface. 
+                        </p>
+                        <p class="section-text">
+                            By working in harmony with the natural defects, voids, and wood grain, the resulting sculpture is a collaboration between centuries-old organic growth and contemporary design.
+                        </p>
+                        
+                        <div class="stats-grid">
+                            <div class="stat-item">
+                                <div><span class="stat-number" data-target="15">0</span><span class="stat-plus">+</span></div>
+                                <span class="stat-label">Years of Mastery</span>
+                            </div>
+                            <div class="stat-item">
+                                <div><span class="stat-number" data-target="350">0</span><span class="stat-plus">+</span></div>
+                                <span class="stat-label">Works Created</span>
+                            </div>
+                            <div class="stat-item">
+                                <div><span class="stat-number" data-target="80">0</span><span class="stat-plus">%</span></div>
+                                <span class="stat-label">Commission Rate</span>
+                            </div>
+                            <div class="stat-item">
+                                <div><span class="stat-number" data-target="12">0</span><span class="stat-plus"></span></div>
+                                <span class="stat-label">Exhibitions</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="craftsmanship-right">
+                    <div class="parallax-img-container">
+                        <img src="assets/artist_studio.png" alt="Sculpture Tools and Studio" class="craftsmanship-img" loading="lazy">
+                        <div class="texture-overlay" style="background-image: url('assets/wood_grain.png');"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Process Section -->
+        <section id="process" class="process">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="eyebrow">THE METHODOLOGY</span>
+                    <h2 class="section-title">The Path to Mastery</h2>
+                </div>
+
+                <div class="process-steps">
+                    <!-- Step 1 -->
+                    <div class="process-card fade-in-up">
+                        <div class="process-step-num">01</div>
+                        <h3>Select Wood</h3>
+                        <p>Sourcing sustainable, air-dried local hardwoods like curly maple, black walnut, and white oak. The wood's moisture, grain orientation, and natural flaws dictate the sculpture outline.</p>
+                    </div>
+                    <!-- Step 2 -->
+                    <div class="process-card fade-in-up">
+                        <div class="process-step-num">02</div>
+                        <h3>Design Concept</h3>
+                        <p>Iterative sketching and physical modeling. The design captures the dynamic balance between negative space, light shadows, and structural integrity before carving begins.</p>
+                    </div>
+                    <!-- Step 3 -->
+                    <div class="process-card fade-in-up">
+                        <div class="process-step-num">03</div>
+                        <h3>Hand Carving</h3>
+                        <p>Using premium Swiss-made gouges, mallets, and fine rotary tools. Rough material is slowly removed over hundreds of hours, carving deep contours and emphasizing the wood's growth rings.</p>
+                    </div>
+                    <!-- Step 4 -->
+                    <div class="process-card fade-in-up">
+                        <div class="process-step-num">04</div>
+                        <h3>Finish & Polish</h3>
+                        <p>Meticulous hand-sanding from 120 up to 2000 grit, followed by multiple coats of museum-grade oils and natural beeswax to protect the wood and make the grain lines shimmer.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery" class="gallery">
+            <div class="container">
+                <div class="section-header-split">
+                    <div>
+                        <span class="eyebrow">CURATED GALLERY</span>
+                        <h2 class="section-title">Portfolio Gallery</h2>
+                    </div>
+                    <div class="gallery-filters">
+                        <button class="filter-btn active" data-filter="all">All Works</button>
+                        <button class="filter-btn" data-filter="organic">Organic</button>
+                        <button class="filter-btn" data-filter="abstract">Abstract</button>
+                        <button class="filter-btn" data-filter="nautical">Nautical</button>
+                    </div>
+                </div>
+
+                <div class="gallery-grid">
+                    <!-- Gallery Item 1 -->
+                    <div class="gallery-item" data-category="organic">
+                        <div class="gallery-img-wrapper">
+                            <img src="assets/sculpture_organic.png" alt="Aura Waves" class="gallery-img-thumb" loading="lazy">
+                            <div class="gallery-hover-overlay">
+                                <div class="hover-details">
+                                    <span class="item-tag">Organic</span>
+                                    <h4>Aura Waves</h4>
+                                    <p class="item-meta">White Oak | 32" x 18" x 14"</p>
+                                </div>
+                                <span class="view-item-btn"><i data-lucide="maximize-2"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Gallery Item 2 -->
+                    <div class="gallery-item" data-category="abstract">
+                        <div class="gallery-img-wrapper">
+                            <img src="assets/sculpture_abstract.png" alt="Monolith Helix" class="gallery-img-thumb" loading="lazy">
+                            <div class="gallery-hover-overlay">
+                                <div class="hover-details">
+                                    <span class="item-tag">Abstract</span>
+                                    <h4>Monolith Helix</h4>
+                                    <p class="item-meta">Black Walnut | 48" x 12" x 12"</p>
+                                </div>
+                                <span class="view-item-btn"><i data-lucide="maximize-2"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Gallery Item 3 -->
+                    <div class="gallery-item" data-category="nautical">
+                        <div class="gallery-img-wrapper">
+                            <img src="assets/sculpture_nautical.png" alt="Cape Crest" class="gallery-img-thumb" loading="lazy">
+                            <div class="gallery-hover-overlay">
+                                <div class="hover-details">
+                                    <span class="item-tag">Nautical</span>
+                                    <h4>Cape Crest</h4>
+                                    <p class="item-meta">Wild Cherry | 28" x 24" x 10"</p>
+                                </div>
+                                <span class="view-item-btn"><i data-lucide="maximize-2"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Gallery Item 4 -->
+                    <div class="gallery-item" data-category="organic">
+                        <div class="gallery-img-wrapper">
+                            <img src="assets/hero_sculpture.png" alt="Ethereal Ripple" class="gallery-img-thumb" loading="lazy">
+                            <div class="gallery-hover-overlay">
+                                <div class="hover-details">
+                                    <span class="item-tag">Organic</span>
+                                    <h4>Ethereal Ripple</h4>
+                                    <p class="item-meta">Walnut & Brass | 36" x 22" x 16"</p>
+                                </div>
+                                <span class="view-item-btn"><i data-lucide="maximize-2"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Gallery Item 5 -->
+                    <div class="gallery-item" data-category="abstract">
+                        <div class="gallery-img-wrapper">
+                            <img src="assets/sculpture_commission.png" alt="Infinite Echo" class="gallery-img-thumb" loading="lazy">
+                            <div class="gallery-hover-overlay">
+                                <div class="hover-details">
+                                    <span class="item-tag">Abstract</span>
+                                    <h4>Infinite Echo</h4>
+                                    <p class="item-meta">English Yew | 42" x 20" x 18"</p>
+                                </div>
+                                <span class="view-item-btn"><i data-lucide="maximize-2"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Gallery Item 6 -->
+                    <div class="gallery-item" data-category="nautical">
+                        <div class="gallery-img-wrapper">
+                            <img src="assets/artist_studio.png" alt="Ocean Spire" class="gallery-img-thumb" loading="lazy">
+                            <div class="gallery-hover-overlay">
+                                <div class="hover-details">
+                                    <span class="item-tag">Nautical</span>
+                                    <h4>Ocean Spire</h4>
+                                    <p class="item-meta">Sinker Cypress | 54" x 16" x 12"</p>
+                                </div>
+                                <span class="view-item-btn"><i data-lucide="maximize-2"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="testimonials">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="eyebrow">TESTIMONIALS</span>
+                    <h2 class="section-title">Acclaim from Collectors</h2>
+                </div>
+
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <div class="quote-icon"><i data-lucide="quote"></i></div>
+                        <p class="quote">"The sculpture is the focal point of our main living space. The way the walnut catches the light in the afternoon, revealing subtle tool marks and grain layers, is breathtaking."</p>
+                        <div class="collector-info">
+                            <h4 class="collector-name">David &amp; Sarah Miller</h4>
+                            <span class="collector-loc">Wilmington, NC</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="quote-icon"><i data-lucide="quote"></i></div>
+                        <p class="quote">"A perfect blend of organic beauty and sophisticated design. Commissioning our custom cherry piece was a deeply collaborative, rewarding experience. The quality is second to none."</p>
+                        <div class="collector-info">
+                            <h4 class="collector-name">Helena Rostova</h4>
+                            <span class="collector-loc">New York, NY</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="quote-icon"><i data-lucide="quote"></i></div>
+                        <p class="quote">"It's rare to find an artist who handles hardwoods with such delicate sensitivity. Our wave sculpture brings absolute serenity and elegant architectural form into our coastal home."</p>
+                        <div class="collector-info">
+                            <h4 class="collector-name">Marcus Vance</h4>
+                            <span class="collector-loc">Miami, FL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Commission CTA -->
+        <section id="commission" class="commission">
+            <div class="commission-light"></div>
+            <div class="container text-center">
+                <span class="eyebrow">EXCLUSIVE ENGAGEMENT</span>
+                <h2 class="commission-title">Own a One-of-a-Kind Masterpiece</h2>
+                <p class="commission-desc">
+                    Due to the slow, intentional nature of our wood selection and hand carving, Cape Fear Carving accepts a limited number of custom commissions annually. Let's create an heirloom piece designed specifically for your space.
+                </p>
+                <a href="#contact" class="btn btn-primary btn-large">Commission Your Sculpture</a>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-left">
+                        <span class="eyebrow">INQUIRIES</span>
+                        <h2 class="section-title">Commence the Journey</h2>
+                        <p class="contact-text">
+                            Whether you are looking to purchase an existing sculpture, commission a custom-designed form, or arrange a private viewing at our Wilmington studio, we look forward to hearing from you.
+                        </p>
+
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <i data-lucide="mail"></i>
+                                <div>
+                                    <h5>Email</h5>
+                                    <a href="mailto:inquiries@capefearcarving.com">inquiries@capefearcarving.com</a>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i data-lucide="map-pin"></i>
+                                <div>
+                                    <h5>Studio Location</h5>
+                                    <p>Wilmington, North Carolina</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i data-lucide="instagram"></i>
+                                <div>
+                                    <h5>Instagram</h5>
+                                    <a href="https://instagram.com/cape_fear_carving" target="_blank" rel="noopener">@cape_fear_carving</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-right">
+                        <form id="inquiry-form" class="inquiry-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="name">Your Name</label>
+                                    <input type="text" id="name" name="name" required placeholder="Alexander Mercer">
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email Address</label>
+                                    <input type="email" id="email" name="email" required placeholder="alex@example.com">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="interest">Interested in</label>
+                                <select id="interest" name="interest">
+                                    <option value="commission">Custom Sculpture Commission</option>
+                                    <option value="existing">Purchase Existing Sculpture</option>
+                                    <option value="private-viewing">Private Studio Tour / Viewing</option>
+                                    <option value="other">General Fine Art Inquiry</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Your Vision / Message</label>
+                                <textarea id="message" name="message" rows="5" required placeholder="Describe your space, preferred hardwood, approximate dimensions, or design inspiration..."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-submit">
+                                <span>Submit Inquiry</span>
+                                <i data-lucide="send"></i>
+                            </button>
+                            <div class="form-status" id="form-status"></div>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Custom Aesthetic Map Block -->
+                <div class="map-container">
+                    <div class="map-overlay">
+                        <div class="map-card">
+                            <h4>Cape Fear Carving Studio</h4>
+                            <p>Historic Downtown Wilmington, NC</p>
+                            <span class="map-status"><span class="pulse-dot"></span> Open for viewings by appointment</span>
+                        </div>
+                    </div>
+                    <div class="mock-map">
+                        <div class="map-water"></div>
+                        <div class="map-roads"></div>
+                        <div class="map-marker">
+                            <div class="marker-glow"></div>
+                            <i data-lucide="map-pin"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <h2>CAPE FEAR CARVING</h2>
+                    <p>Contemporary Fine Wood Art</p>
+                </div>
+                <div class="footer-nav">
+                    <a href="#collections">Collections</a>
+                    <a href="#gallery">Gallery</a>
+                    <a href="#craftsmanship">Craftsmanship</a>
+                    <a href="#process">Process</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2026 Cape Fear Carving. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="https://instagram.com/cape_fear_carving" target="_blank" rel="noopener"><i data-lucide="instagram"></i></a>
+                    <a href="#" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+                    <a href="#" aria-label="Pinterest"><i data-lucide="pinterest"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Fullscreen Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <button class="lightbox-close" aria-label="Close Lightbox"><i data-lucide="x"></i></button>
+        <button class="lightbox-prev" aria-label="Previous Image"><i data-lucide="chevron-left"></i></button>
+        <button class="lightbox-next" aria-label="Next Image"><i data-lucide="chevron-right"></i></button>
+        <div class="lightbox-content">
+            <img src="" alt="" class="lightbox-img">
+            <div class="lightbox-details">
+                <span class="lightbox-category">Category</span>
+                <h3 class="lightbox-title">Title</h3>
+                <p class="lightbox-meta">Materials / Dimensions</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- GSAP & ScrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <!-- Custom JS -->
+    <script src="main.js"></script>
+</body>
+</html>
